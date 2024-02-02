@@ -1,5 +1,6 @@
 import HeroPage from "@/components/hero";
 import MemberShipPage from "@/components/membership";
+import NewReleaseProductsPage from "@/components/newreleaseproducts";
 import PromoProductsPage from "@/components/promoproducts";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroPage />
       <PromoProductsPage />
       <MemberShipPage />
+      <NewReleaseProductsPage />
     </>
   );
 }

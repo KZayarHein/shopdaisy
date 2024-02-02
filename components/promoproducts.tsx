@@ -8,7 +8,7 @@ function PromoProductsPage() {
     <section className="px-20 py-5" id="section">
       <div className="text-center mb-6">
         <h3 className="text-4xl font-bold mb-2">Best Deals</h3>
-        <p className="text-xl">Just For You</p>
+        <p className="text-lg">Just For You</p>
       </div>
 
       <div className="flex gap-5 flex-wrap items-center justify-center">

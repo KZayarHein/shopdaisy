@@ -48,3 +48,36 @@ export const products = [
     image: "/pod-white.jpg",
   },
 ];
+
+export const newProducts = [
+  {
+    id: 1,
+    description: "Apple Flavor",
+    price: "30,000 MMK",
+    image: "/flavor-apple.jpg",
+  },
+  {
+    id: 2,
+    description: "Buleberry Flavor",
+    price: "30,000 MMK",
+    image: "/flavor-blueberry.jpg",
+  },
+  {
+    id: 3,
+    description: "Lemon Flavor",
+    price: "30,000 MMK",
+    image: "/flavor-lemon.jpg",
+  },
+  {
+    id: 4,
+    description: "Orange Flavor",
+    price: "30,000 MMK",
+    image: "/flavor-orange.jpg",
+  },
+  {
+    id: 5,
+    description: "Mangosteen Flavor",
+    price: "30,000 MMK",
+    image: "/flavor-mangosteen.jpg",
+  },
+];
