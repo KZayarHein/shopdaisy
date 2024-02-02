@@ -10,14 +10,17 @@ function HeroPage() {
       <div className="relative h-screen">
         <div className="absolute bottom-0 md:bottom-[-50px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white z-10 text-center">
           <p className="text-sm md:text-2xl opacity-70">The Best Look</p>
-          <h1 className="text-2xl md:text-6xl font-bold mb-2">
+          <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mb-2">
             Anytime Anywhere
           </h1>
-          <p className="text-sm lg:text-2xl opacity-70 mb-2">
+          <p className="text-sm lg:text-2xl opacity-70 mb-3">
             Starts from 10,000MMK
           </p>
 
-          <a className="btn-md outline-none rounded-full py-2 md:btn-lg bg-gray-600 hover:bg-gray-500 cursor-pointer opacity-75">
+          <a
+            href="#section"
+            className="btn-md rounded-full py-2 md:btn-lg bg-gray-600 hover:bg-gray-500 cursor-pointer opacity-85"
+          >
             <span className="text-white">View</span>
           </a>
         </div>

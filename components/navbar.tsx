@@ -4,7 +4,7 @@ import { IoSearchOutline, IoCartOutline, IoMenuOutline } from "react-icons/io5";
 
 function Navbar() {
   return (
-    <div className="navbar px-20 py-5 bg-transparent w-full fixed z-40">
+    <div className="navbar px-20 py-5 bg-transparent w-full absolute top-0 z-40">
       <div className="navbar-start">
         <Image
           src="/logo-no-background.svg"

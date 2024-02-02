@@ -1,6 +1,13 @@
 import HeroPage from "@/components/hero";
-import Image from "next/image";
+import MemberShipPage from "@/components/membership";
+import PromoProductsPage from "@/components/promoproducts";
 
 export default function Home() {
-  return <HeroPage />;
+  return (
+    <>
+      <HeroPage />
+      <PromoProductsPage />
+      <MemberShipPage />
+    </>
+  );
 }
