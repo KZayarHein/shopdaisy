@@ -20,7 +20,7 @@ const images = [
 
 function ShowcasePage() {
   return (
-    <section className="px-20 pxy-5 mb-5 relative">
+    <section className="px-20 pxy-5 mb-5 relative overflow-hidden">
       <div className="flex flex-col  md:flex-row gap-3">
         {images.map((img) => (
           <div
