@@ -4,6 +4,14 @@ import { IoLocationOutline } from "react-icons/io5";
 import { CiPhone } from "react-icons/ci";
 import Image from "next/image";
 
+const socials = [
+  { id: 1, image: "/facebook.jpg", title: "facebook" },
+  { id: 2, image: "/instagram.jpg", title: "instagram" },
+  { id: 3, image: "/viber.jpg", title: "viber" },
+  { id: 4, image: "/telegram.jpg", title: "telegram" },
+  { id: 5, image: "/twitter.jpg", title: "twitter" },
+];
+
 function Footer() {
   return (
     <footer>
@@ -113,22 +121,12 @@ function Footer() {
         <div className="flex w-64 flex-col space-y-3">
           <h5 className="text-lg font-medium">Follow Us On</h5>
 
-          <div className="flex">
-            <div className="w-10 h-10 relative cursor-pointer ">
-              <Image src="/facebook-1.jpg" fill alt="wave log" />
-            </div>
-            <div className="w-10 h-10 relative cursor-pointer">
-              <Image src="/instagram-1.jpg" fill alt="kbz log" />
-            </div>
-            <div className="w-10 h-10 relative cursor-pointer">
-              <Image src="/viber.jpg" fill alt="kbz log" />
-            </div>
-            <div className="w-10 h-10 relative cursor-pointer">
-              <Image src="/telegram.jpg" fill alt="kbz log" />
-            </div>
-            <div className="w-10 h-10 relative cursor-pointer">
-              <Image src="/twitter.jpg" fill alt="kbz log" />
-            </div>
+          <div className="flex gap-2">
+            {socials.map((soc) => (
+              <div key={soc.id} className=" cursor-pointer rounded-md">
+                <Image src={soc.image} width={50} height={50} alt={soc.title} />
+              </div>
+            ))}
           </div>
         </div>
       </div>

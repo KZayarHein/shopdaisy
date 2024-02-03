@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .btn {
   /* Your common button styles */
   padding: 8px 12px;

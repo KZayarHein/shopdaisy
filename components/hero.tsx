@@ -1,19 +1,19 @@
 import Image from "next/image";
-import { useState } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 import Navbar from "./navbar";
+import { heroImages } from "@/constants";
 
 function HeroPage() {
   return (
     <>
       <Navbar />
-      <div className="relative h-screen">
+      <div className="relative h-screen mb-5">
         <div className="absolute bottom-0 md:bottom-[-50px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white z-10 text-center">
-          <p className="text-sm md:text-2xl opacity-70">The Best Look</p>
+          <p className="text-sm md:text-xl opacity-70">The Best Look</p>
           <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mb-2">
             Anytime Anywhere
           </h1>
-          <p className="text-sm lg:text-2xl opacity-70 mb-3">
+          <p className="text-sm lg:text-xl opacity-70 mb-3">
             Starts from 10,000MMK
           </p>
 
@@ -28,20 +28,30 @@ function HeroPage() {
         <div className="carousel w-full min-h-screen">
           <div id="slide1" className="carousel-item relative w-full ">
             <Image
+              src="/background-2.jpg"
+              fill
+              alt="background-2"
+              objectFit="cover"
+            />
+          </div>
+
+          <div id="slide2" className="carousel-item relative w-full ">
+            <Image
               src="/background-1.jpg"
               fill
               alt="background-1"
               objectFit="cover"
             />
           </div>
-          <div id="slide2" className="carousel-item relative w-full">
+
+          {/* <div id="slide3" className="carousel-item relative w-full">
             <Image
-              src="/background-2.jpg"
+              src="/background-3.jpg"
               fill
-              alt="background-1"
+              alt="background-3"
               objectFit="cover"
             />
-          </div>
+          </div> */}
 
           {/* Previous and Next button */}
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
@@ -51,6 +61,7 @@ function HeroPage() {
             >
               <FaArrowLeft className="text-white" />
             </a>
+
             <a
               href="#slide2"
               className="btn md:min-h-[126px] bg-opacity-75 bg-gray-700 hover:bg-gray-600"
@@ -62,12 +73,12 @@ function HeroPage() {
       </div>
 
       {/* track button */}
-      <div className="flex justify-center w-full py-2 gap-2">
+      {/* <div className="flex justify-center w-full py-2 gap-2">
         <a href="#slide1" className="btn btn-xs circle-btn active" />
         <a href="#slide2" className="btn btn-xs bg-gray-500 circle-btn" />
         <a href="#item3" className="btn btn-xs circle-btn" />
         <a href="#item4" className="btn btn-xs circle-btn" />
-      </div>
+      </div> */}
     </>
   );
 }

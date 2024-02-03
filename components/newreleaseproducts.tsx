@@ -4,7 +4,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 function NewReleaseProductsPage() {
   return (
-    <section className="px-20 py-5">
+    <section className="px-20 py-5 mb-5">
       <div className="text-center mb-6">
         <h3 className="text-4xl font-bold mb-2">
           <span className="text-red-500">New</span> Releasesd
@@ -34,7 +34,7 @@ function NewReleaseProductsPage() {
       </div>
 
       <div className="flex items-center justify-center mt-5">
-        <button className="btn btn-wide rounded-full">
+        <button className="btn md:btn-wide rounded-full">
           View More
           <MdKeyboardArrowRight className="text-xl" />
         </button>

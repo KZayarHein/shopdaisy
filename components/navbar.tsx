@@ -15,7 +15,7 @@ function Navbar() {
       </div>
 
       <div className="navbar-end">
-        <div className="flex items-center gap-3 align-top">
+        <div className="hidden md:flex items-center gap-3 align-top">
           <div>
             <IoSearchOutline className="text-white text-xl cursor-pointer" />
           </div>

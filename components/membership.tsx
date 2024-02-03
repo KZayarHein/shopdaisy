@@ -3,8 +3,8 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 function MemberShipPage() {
   return (
-    <section className="px-20 py-5">
-      <div className="flex items-center flex-wrap gap-1">
+    <section className="px-20 py-5 mb-5">
+      <div className="flex items-center flex-wrap gap-1 justify-center">
         <div className="relative">
           <div className="w-[400px] h-[200px] md:w-[750px] md:h-[405px] relative ">
             <Image
@@ -28,7 +28,7 @@ function MemberShipPage() {
         </div>
 
         <div className="relative">
-          <div className="w-[200px] h-[405px] relative">
+          <div className="w-[200px] h-[200px] md:h-[405px] relative">
             <Image
               src="/showcase-2.jpg"
               fill

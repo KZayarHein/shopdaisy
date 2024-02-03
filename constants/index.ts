@@ -81,3 +81,9 @@ export const newProducts = [
     image: "/flavor-mangosteen.jpg",
   },
 ];
+
+export const heroImages = [
+  { id: 1, image: "/background-2.jpg", title: "background image" },
+  { id: 1, image: "/background-1.jpg", title: "background image" },
+  { id: 1, image: "/background-3.jpg", title: "background image" },
+];
