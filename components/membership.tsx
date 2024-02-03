@@ -28,7 +28,7 @@ function MemberShipPage() {
         </div>
 
         <div className="relative">
-          <div className="w-[200px] h-[200px] md:h-[405px] relative">
+          <div className="w-[200px] h-[200px] sm:h-[405px] relative">
             <Image
               src="/showcase-2.jpg"
               fill

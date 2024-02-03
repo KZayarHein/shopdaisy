@@ -30,11 +30,11 @@ function FeaturePage() {
   //   const [slide, setSlide] = useState(4);
   return (
     <section className="px-20 py-5 ">
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-5">
         {images.map((img) => (
           <div
             key={img.id}
-            className="p-3 bg-gray-900 rounded-md flex items-center gap-20 overflow-hidden relative"
+            className="p-3 bg-gray-900 rounded-md min-w-full flex items-center gap-20 overflow-hidden relative"
           >
             <div className="flex-1 md:flex-auto md:flex md:flex-shrink-0 md:w-1/3 gap-3 items-center">
               <div className=" w-[150px] h-[230px] md:w-[220px] md:h-[300px] relative">
