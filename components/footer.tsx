@@ -12,6 +12,21 @@ const socials = [
   { id: 5, image: "/twitter.jpg", title: "twitter" },
 ];
 
+const languages = [
+  {
+    id: 1,
+    language: "Myanmar (Unicode)",
+  },
+  {
+    id: 2,
+    language: "Myanmar (Zawgyi)",
+  },
+  {
+    id: 3,
+    language: "English",
+  },
+];
+
 function Footer() {
   return (
     <footer>
@@ -37,33 +52,17 @@ function Footer() {
         {/* Language */}
         <div className="flex w-64 flex-col space-y-3">
           <h5 className="text-lg font-medium">Language</h5>
-          <div className="flex items-center space-x-3">
-            <input
-              type="radio"
-              name="radio-2"
-              className="radio-xs cursor-pointer radio-primary"
-              checked
-            />
-            <span className="text-sm">Myanmar (Unicode)</span>
-          </div>
-          <div className="flex items-center space-x-3">
-            <input
-              type="radio"
-              name="radio-2"
-              className="radio-xs cursor-pointer radio-primary"
-              checked
-            />
-            <span className="text-sm">Myanmar (Zawgyi)</span>
-          </div>
-          <div className="flex items-center space-x-3">
-            <input
-              type="radio"
-              name="radio-2"
-              className="radio-xs cursor-pointer radio-primary "
-              checked
-            />
-            <span className="text-sm">English</span>
-          </div>
+          {languages.map((lang) => (
+            <div key={lang.id} className="flex items-center space-x-3">
+              <input
+                type="radio"
+                name="radio-2"
+                className="radio-xs cursor-pointer radio-primary"
+                checked
+              />
+              <span className="text-sm">{lang.language}</span>
+            </div>
+          ))}
         </div>
 
         {/* Contact */}
