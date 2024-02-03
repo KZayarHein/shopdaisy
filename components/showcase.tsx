@@ -5,14 +5,14 @@ const images = [
   {
     id: 1,
     image: "/testproduct-purple.jpg",
-    color: "purple",
+    color: "6b21a8",
     title: "testproduct",
     description: "Grapefruit Berry",
   },
   {
     id: 2,
     image: "/testproduct-green.jpg",
-    color: "green",
+    color: "166534",
     title: "testproduct",
     description: "Sour Apple Melon",
   },
@@ -25,7 +25,8 @@ function ShowcasePage() {
         {images.map((img) => (
           <div
             key={img.id}
-            className={`bg-${img.color}-800 rounded-md flex items-center`}
+            style={{ backgroundColor: `#${img.color}` }}
+            className={`rounded-md flex items-center`}
           >
             <div className="w-[150px] h-[200px] md:w-[300px] md:h-[350px] relative">
               <Image
